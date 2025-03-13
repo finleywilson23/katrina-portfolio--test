@@ -23,6 +23,7 @@ function MainContent() {
   const [isMobile, setIsMobile] = useState(false)
   const [isRearranging, setIsRearranging] = useState(false)
   const contentRef = useRef<HTMLDivElement>(null)
+  const [shouldShowPopup, setShouldShowPopup] = useState(false);
   const SVG_LIMIT = 25
   const resizeTimeoutRef = useRef<NodeJS.Timeout | null>(null)
 
@@ -143,55 +144,56 @@ function MainContent() {
     return () => window.removeEventListener("keydown", handleKeyDown)
   }, [])
 
-  // Improved SVG spawning function
+  useEffect(() => {
+    if (shouldShowPopup) {
+      showLimitPopup(clearSvgs);
+      setShouldShowPopup(false); // Reset the flag after showing the popup
+    }
+  }, [shouldShowPopup]);
+
   const spawnSvg = () => {
     setSvgElements((prev) => {
       // Check if we've reached the limit
       if (prev.length >= SVG_LIMIT) {
-        showLimitPopup(clearSvgs)
-        return prev
+        // Instead of calling showLimitPopup directly, set a flag
+        setShouldShowPopup(true);
+        return prev;
       }
-
+  
       // Calculate a better position that's always visible
-      const viewportWidth = window.innerWidth
-      const viewportHeight = window.innerHeight
-
-      // Add padding to ensure SVGs stay within visible area
-      const padding = isMobile ? 20 : 30
-
-      // Generate random SVG type
-      const type = Math.floor(Math.random() * 3) + 1
-
-      // Get SVG dimensions based on type and scale - using smaller scale
-      const scale = isMobile ? 0.5 : 0.7
-      let svgWidth, svgHeight
-
+      const viewportWidth = window.innerWidth;
+      const viewportHeight = window.innerHeight;
+  
+      const padding = isMobile ? 20 : 30;
+      const type = Math.floor(Math.random() * 3) + 1;
+      const scale = isMobile ? 0.5 : 0.7;
+  
+      let svgWidth, svgHeight;
       switch (type) {
         case 1:
-          svgWidth = 71 * scale
-          svgHeight = 66 * scale
-          break
+          svgWidth = 71 * scale;
+          svgHeight = 66 * scale;
+          break;
         case 2:
-          svgWidth = 97 * scale
-          svgHeight = 82 * scale
-          break
+          svgWidth = 97 * scale;
+          svgHeight = 82 * scale;
+          break;
         case 3:
         default:
-          svgWidth = 105 * scale
-          svgHeight = 99 * scale
+          svgWidth = 105 * scale;
+          svgHeight = 99 * scale;
       }
-
-      // Calculate spawn area accounting for SVG size
-      const spawnAreaWidth = viewportWidth - padding * 2 - svgWidth
-      const spawnAreaHeight = viewportHeight - padding * 2 - svgHeight
-
-      // Generate random position within spawn area
-      const x = padding + Math.random() * spawnAreaWidth
-      const y = window.scrollY + padding + Math.random() * spawnAreaHeight
-
-      return [...prev, { id: Date.now(), x, y, type }]
-    })
-  }
+  
+      const spawnAreaWidth = viewportWidth - padding * 2 - svgWidth;
+      const spawnAreaHeight = viewportHeight - padding * 2 - svgHeight;
+  
+      const x = padding + Math.random() * spawnAreaWidth;
+      const y = window.scrollY + padding + Math.random() * spawnAreaHeight;
+  
+      return [...prev, { id: Date.now(), x, y, type }];
+    });
+  };
+  
 
   const clearSvgs = () => {
     setSvgElements((prev) => prev.map((svg) => ({ ...svg, isRemoving: true })))
