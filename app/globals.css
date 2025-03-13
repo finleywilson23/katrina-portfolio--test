@@ -1,0 +1,266 @@
+/* Add Google Fonts import */
+/*@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&display=swap"); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Update the z-index hierarchy to position SVGs correctly */
+:root {
+  --topbar-height: 50px;
+  --background: 0 0% 100%;
+  --foreground: 0 0% 3.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 3.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 3.9%;
+  --primary: 0 0% 9%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 0 0% 96.1%;
+  --secondary-foreground: 0 0% 9%;
+  --muted: 0 0% 96.1%;
+  --muted-foreground: 0 0% 45.1%;
+  --accent: 0 0% 96.1%;
+  --accent-foreground: 0 0% 9%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 89.8%;
+  --input: 0 0% 89.8%;
+  --ring: 0 0% 3.9%;
+  --radius: 0.5rem;
+  --z-index-modal: 600;
+  --z-index-popup: 500;
+  --z-index-topbar: 1000;
+  --z-index-svg: 50;
+  --z-index-portfolio-hover: 60;
+  --z-index-content: 20;
+  --z-index-sticky: 40;
+  --z-index-clear-button: 400;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --topbar-height: 56px;
+  }
+}
+
+.dark {
+  --background: 0 0% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 0 0% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 0 0% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 0 0% 98%;
+  --primary-foreground: 0 0% 9%;
+  --secondary: 0 0% 14.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 0 0% 14.9%;
+  --muted-foreground: 0 0% 63.9%;
+  --accent: 0 0% 14.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 14.9%;
+  --input: 0 0% 14.9%;
+  --ring: 0 0% 83.1%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    background-color: #f3f4f6;
+    @apply text-foreground;
+    /* Use Inter font */
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+    font-weight: 300;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    /* Use Instrument Serif font */
+    font-family: "Instrument Serif", Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+  }
+
+  /* Font size system */
+  h1,
+  .h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+  h2,
+  .h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+  h3,
+  .h3 {
+    @apply text-2xl md:text-3xl;
+  }
+  h4,
+  .h4 {
+    @apply text-xl md:text-2xl;
+  }
+  h5,
+  .h5 {
+    @apply text-lg md:text-xl;
+  }
+  h6,
+  .h6 {
+    @apply text-base md:text-lg;
+  }
+}
+
+::selection {
+  background-color: #e0e0e0;
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee-slow {
+  animation: marquee-slow 30s linear infinite;
+}
+
+@keyframes marquee-slow {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.hover-animation {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.hover-animation:hover {
+  @apply bg-black/5;
+}
+
+@layer components {
+  .link-hover {
+    @apply transition-all duration-300 hover:bg-gray-200 hover:rounded-md hover:px-2 hover:py-1;
+  }
+}
+
+/* Update the portfolio-section-active class to remove background color */
+.portfolio-section-active {
+  position: sticky;
+  top: calc(var(--topbar-height) + 20px); /* Positioned just below the topbar with a small gap */
+  z-index: var(--z-index-sticky);
+  padding-top: 1rem;
+}
+
+/* Ensure portfolio hover images have higher z-index than portfolio content but lower than SVGs */
+.fixed.pointer-events-none {
+  z-index: var(--z-index-portfolio-hover) !important;
+}
+
+/* Portfolio hover state */
+.group:hover::before {
+  opacity: 1 !important;
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  transition: opacity 0.2s ease-in-out !important;
+}
+
+/* Ensure smooth marquee animation */
+.whitespace-nowrap.inline-block {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+
+/* Add this to your existing CSS */
+/* Fix the animation for popups */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Add responsive styles for popups */
+@media (max-width: 640px) {
+  .fixed.top-\[40px\] {
+    top: 50px;
+  }
+}
+
+/* Use actual fonts with fallbacks */
+.instrument-serif {
+  font-family: "Instrument Serif", Georgia, "Times New Roman", Times, serif !important;
+  letter-spacing: -0.01em;
+}
+
+.inter {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif !important;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+}
+
+/* Add animation for preloader */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 3s linear infinite;
+}
+
+/* Marquee animation */
+@keyframes marquee-infinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee-infinite 30s linear infinite;
+}
+
+/* Add this to ensure the top bar has a higher z-index than SVGs */
+header.sticky {
+  z-index: var(--z-index-topbar) !important; /* Higher than SVGs */
+}
+
