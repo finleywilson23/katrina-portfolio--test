@@ -40,9 +40,9 @@ const portfolioData: PortfolioSectionData[] = [
         description: "Theater Visual Identity Redesign",
         year: "2022",
         images: [
-          "/placeholder.svg?height=400&width=400",
-          "/placeholder.svg?height=400&width=400&text=Image+2",
-          "/placeholder.svg?height=400&width=400&text=Image+3",
+          "/teatris1.webp?height=400&width=400",
+          "/teatris2.webp?height=400&width=400",
+          "/teatris3.webp?height=400&width=400",
         ],
         link: "https://example.com/cafe-botanique",
         additionalInfo:
