@@ -46,7 +46,7 @@ const portfolioData: PortfolioSectionData[] = [
         ],
         link: "https://example.com/cafe-botanique",
         additionalInfo:
-          "This project involved a complete redesign of the Valmiera Drama Theater's visual identity, including logo, typography, color palette, and marketing materials. The goal was to create a modern, versatile identity that honors the theater's rich history while appealing to contemporary audiences.",
+          "For my final project at the Riga School of Design and Art, I created a new visual identity for a theater in Valmiera, Latvia. Based on extensive research, the project included a brand book with thorough graphic design examples like logo variations, layouts, and other visual applications, ensuring a cohesive yet flexible brand presence. The identity was designed to enhance the theater’s communication across various platforms while maintaining a strong visual character.",
       },
       {
         id: 2,
@@ -55,7 +55,7 @@ const portfolioData: PortfolioSectionData[] = [
         year: "2022",
         images: ["/placeholder.svg?height=400&width=400", "/placeholder.svg?height=400&width=400&text=Poster+2"],
         additionalInfo:
-          "For SIMO Pizzeria, I developed a comprehensive visual system that captures the authentic Italian spirit of the restaurant while adding a contemporary twist. The project included menu design, signage, packaging, and promotional materials.",
+          "I created a cohesive visual identity for SIMO Pizzeria, drawing inspiration from the vibrant colors of Moroccan tiles. This included menu design, layout development, and social media content, ensuring a consistent and engaging brand presence across various platforms.",
       },
       {
         id: 3,
@@ -65,7 +65,7 @@ const portfolioData: PortfolioSectionData[] = [
         images: ["/placeholder.svg?height=400&width=400"],
         link: "https://example.com/art-magazine",
         additionalInfo:
-          "This project for Rīga Stradiņš University's Stomatology department required a professional yet approachable visual identity. I created a clean, medical-inspired design system that communicates expertise and care, including logo design, stationery, digital assets, and informational materials.",
+          "I developed a visual identity and graphic design for the social media platforms of Rīga Stradiņš University Stomatology SZP, drawing inspiration from the intricate details of teeth and X-rays. The design aimed to reflect the precision and professionalism of the dental field, creating a modern and engaging online presence.",
       },
       {
         id: 4,
@@ -74,25 +74,25 @@ const portfolioData: PortfolioSectionData[] = [
         year: "2023",
         images: ["/placeholder.svg?height=400&width=400"],
         additionalInfo:
-          "I developed social media visual strategies for multiple major brands, creating cohesive content that maintained brand identity while optimizing engagement across different platforms. Each brand required a unique approach tailored to their specific audience and communication goals.",
+          "I created social media visuals for brands like Swisscom, Baltic Brand Forum, the Latvian Road Traffic Safety Directorate (CSDD), and Ergo Group. The designs were adapted to align with each brand’s existing guidelines, ensuring consistency with their established visual identity while enhancing engagement across digital platforms.",
       },
       {
         id: 5,
         name: "Tallinas Street Creative Quarter",
         description: "Social Media and Graphic Design",
-        year: "2024-2025",
+        year: "2024–2025",
         images: ["/placeholder.svg?height=400&width=400"],
         additionalInfo:
-          "As the lead designer for Tallinas Street Creative Quarter, I developed a vibrant visual language that reflects the area's artistic community. The ongoing project includes event promotions, wayfinding systems, digital content, and printed materials that help establish the quarter as a cultural destination.",
+          "I created various graphic design visuals for both social media and print. The focus was on adapting and developing the brand’s existing visual identity to ensure it remained true to its core values while staying modern and relevant in today’s digital landscape. The designs were crafted to enhance the quarter's presence and engage its audience across multiple platforms.",
       },
       {
         id: 6,
-        name: "School work - Café",
+        name: "School project – Café",
         description: "Conceptual Visual Identity",
         year: "2023",
         images: ["/placeholder.svg?height=400&width=400"],
         additionalInfo:
-          "This academic project explored the creation of a complete café brand identity from concept to execution. I developed a fictional café brand with a distinctive personality, including naming, logo design, packaging, menu design, and environmental graphics.",
+          "I created a conceptual visual identity for a café as part of my school project. This included the development of a comprehensive brand book and key graphic design elements, focusing on establishing a unified and engaging visual language for the café’s brand.",
       },
       {
         id: 7,
@@ -101,7 +101,7 @@ const portfolioData: PortfolioSectionData[] = [
         year: "2022",
         images: ["/placeholder.svg?height=400&width=400"],
         additionalInfo:
-          "This personal project was a custom ex-libris stamp designed for my father's book collection. The design incorporates elements that reflect his interests and personality, created with traditional illustration techniques and adapted for stamp production.",
+          "As a personal and meaningful project, I designed a custom ex-libris stamp for my dad, a passionate book reader. The design features a hand-drawn illustration, creating a unique and heartfelt mark for his book collection.",
       },
       {
         id: 8,
@@ -110,7 +110,7 @@ const portfolioData: PortfolioSectionData[] = [
         year: "2021",
         images: ["/placeholder.svg?height=400&width=400"],
         additionalInfo:
-          "For this beauty product packaging project, I created a minimalist yet distinctive design for a lip gloss line. The project included packaging design, typography, color selection, and product photography direction.",
+          "I created a minimalistic packaging design for a lip gloss product, focusing on simplicity. The design aimed to highlight the elegance of the product, reflecting both modern aesthetics and a sleek, refined look.",
       },
       {
         id: 9,
@@ -119,7 +119,7 @@ const portfolioData: PortfolioSectionData[] = [
         year: "2022",
         images: ["/placeholder.svg?height=400&width=400"],
         additionalInfo:
-          "This self-initiated project involved the complete design of a book, including typography, layout, custom illustrations, and cover design. The project allowed me to explore the relationship between text and image while creating a cohesive reading experience.",
+          "For this school project, I worked on two book designs. One featured minimalistic illustrations symbolizing crossroads with oneself, capturing a personal and introspective theme. The other focused purely on minimalistic layout design. Both projects aimed to create a visually harmonious and intimate experience, with a strong emphasis on personal reflection and design clarity.",
       },
       {
         id: 10,
@@ -128,7 +128,7 @@ const portfolioData: PortfolioSectionData[] = [
         year: "2023",
         images: ["/placeholder.svg?height=400&width=400"],
         additionalInfo:
-          "This speculative redesign of the ZARA mobile app focused on improving user experience and visual hierarchy. I analyzed the existing interface, identified pain points, and created a more intuitive, visually refined alternative that better showcases the brand's products.",
+          "I created a conceptual UI redesign for the ZARA clothing store app, with a strong focus on enhancing user experience. The design aimed to simplify navigation, improve functionality, and create a visually engaging interface, ensuring a seamless and enjoyable shopping experience for users.",
       },
       {
         id: 11,
@@ -137,7 +137,7 @@ const portfolioData: PortfolioSectionData[] = [
         year: "2022",
         images: ["/placeholder.svg?height=400&width=400"],
         additionalInfo:
-          "This conceptual art project explored the intersection of technology and identity through graphic design. Using technical diagrams, error messages, and system interfaces as visual metaphors, I created a series of prints that comment on human experience in the digital age.",
+          "This deeply personal project explores my identity through the lens of a technical issue. I view my mind as something that correlates with the external world, where formal digital communication often becomes a facade, shaped by what appears most aesthetic. My thoughts grow deeper, and I try to present a controlled version of myself, suppressing emotions and maintaining composure. However, as experience shows, it’s not always successful. I am constantly navigating this balance — just trying to find the right button to press.",
       },
     ],
   },
@@ -237,30 +237,13 @@ const portfolioData: PortfolioSectionData[] = [
     ],
   },
   {
-    id: "photography",
-    title: "Photography",
-    description:
-      "This section offers a glimpse into my photography projects, spanning everything from carefully styled concept shoots to energetic event photography. My work balances bold, creative direction with the ability to capture spontaneous, genuine moments. Whether working in a controlled studio setting or documenting live events, I aim to blend artistry with precision, ensuring each shot reflects its unique atmosphere. This adaptability allows me to tailor my approach to each project, resulting in visuals that are both memorable and impactful.",
-    projects: [
-      {
-        id: 20,
-        name: "Urban Exploration Series",
-        description: "Personal Project",
-        year: "2025",
-        images: ["/placeholder.svg?height=400&width=600"],
-        additionalInfo:
-          "This ongoing photography series documents forgotten urban spaces and architectural details that often go unnoticed. Through careful composition and attention to light, I aim to reveal the beauty and character in these overlooked environments, creating a visual record of urban evolution and decay.",
-      },
-    ],
-  },
-  {
     id: "videography",
     title: "Videography & Sound",
     description:
       "In this section, you'll find a collection of my creative video and audio projects, focused on artistic exploration and expression. My approach is driven by experimentation, where visuals, sound, and emotion intersect to create immersive, thought-provoking experiences. I concentrate on rhythm, atmosphere, and abstract storytelling, moving beyond traditional narratives to craft pieces that invite deeper reflection. Each project is developed with careful attention to detail, blending visual and auditory elements to challenge conventions and evoke a strong sensory response.",
     projects: [
       {
-        id: 21,
+        id: 20,
         name: "Safe driving",
         description: "Personal Project",
         year: "2024",
@@ -269,7 +252,7 @@ const portfolioData: PortfolioSectionData[] = [
           "This experimental short film explores the psychological experience of driving through abstract visuals and immersive sound design. Using a combination of in-camera techniques and subtle post-production effects, the piece creates a hypnotic rhythm that mimics the meditative state often experienced during long drives.",
       },
       {
-        id: 22,
+        id: 21,
         name: "Baltic sea",
         description: "Personal Project",
         year: "2023",
@@ -279,7 +262,7 @@ const portfolioData: PortfolioSectionData[] = [
           "This audio-visual piece captures the changing moods and textures of the Baltic Sea through different seasons and weather conditions. The project combines time-lapse photography, underwater footage, and field recordings to create an immersive portrait of this distinctive body of water and its relationship to the surrounding landscape.",
       },
       {
-        id: 23,
+        id: 22,
         name: "Forest dream",
         description: "Personal Project",
         year: "2022",
@@ -296,7 +279,7 @@ const portfolioData: PortfolioSectionData[] = [
       "In this section, you'll find a selection of my screen-printing and monotype works, exploring the unique textures and layers. My approach is rooted in experimentation, using the unpredictability of the process to embrace spontaneity and creative accidents. Each piece is an exploration of form, color, and composition, where repetition meets individuality—especially in monotypes, where every print is one of a kind. Through layering, contrast, and texture, I aim to create visually engaging works that reflect both intentional design and the organic nature of the medium.",
     projects: [
       {
-        id: 24,
+        id: 23,
         name: "I want",
         description: "Digital print",
         year: "2022",
@@ -305,7 +288,7 @@ const portfolioData: PortfolioSectionData[] = [
           "This series of digital prints explores desire and aspiration through typographic experimentation. The work plays with legibility and visual hierarchy, using overlapping text and distortion techniques to create compositions that reveal different messages depending on viewing distance and perspective.",
       },
       {
-        id: 25,
+        id: 24,
         name: "Twins",
         description: "Monotype",
         year: "2022",
@@ -314,7 +297,7 @@ const portfolioData: PortfolioSectionData[] = [
           "This collection of monotype prints explores the concept of duality through mirrored and paired forms. Each unique print was created using oil-based inks on a plexiglass plate, allowing for subtle variations in pressure and ink distribution that create rich textures and unexpected details.",
       },
       {
-        id: 26,
+        id: 25,
         name: "Yellow press",
         description: "Screen-print",
         year: "2024",
@@ -323,7 +306,7 @@ const portfolioData: PortfolioSectionData[] = [
           "This screen print series comments on media sensationalism through appropriated newspaper headlines and imagery. Using a limited palette dominated by yellow (referencing the historical term 'yellow journalism'), the prints combine text and image in compositions that highlight the manipulative nature of tabloid reporting.",
       },
       {
-        id: 27,
+        id: 26,
         name: "10x10x10x10",
         description: "Screen-print",
         year: "2024",
@@ -332,30 +315,13 @@ const portfolioData: PortfolioSectionData[] = [
           "This systematic print project explores mathematical patterns through screen printing. Following a strict set of rules based on a 10x10 grid, I created variations that demonstrate how simple numerical constraints can generate complex and visually engaging compositions.",
       },
       {
-        id: 28,
+        id: 27,
         name: "The flowers",
         description: "Monotype",
         year: "2023",
         images: ["/placeholder.svg?height=400&width=600"],
         additionalInfo:
           "This series of monotype prints explores botanical forms through abstraction and gestural mark-making. Rather than depicting flowers realistically, the prints capture their essence through organic shapes, dynamic lines, and layered colors that evoke the sensory experience of a garden in bloom.",
-      },
-    ],
-  },
-  {
-    id: "paintings",
-    title: "Paintings",
-    description:
-      "This section presents my painting works, created with oil on canvas. My practice combines a strong foundation in academic painting, including detailed and precise still life compositions, with a passion for creative exploration. Beyond traditional techniques, I delve into imaginative projects that allow me to experiment with ideas, forms, and emotions. This balance between technical skill and artistic freedom defines my approach to painting, resulting in works that are both disciplined and expressive.",
-    projects: [
-      {
-        id: 29,
-        name: "Abstract Landscapes",
-        description: "Personal Project",
-        year: "2025",
-        images: ["/placeholder.svg?height=400&width=600"],
-        additionalInfo:
-          "This series of oil paintings interprets landscape elements through abstraction, focusing on color relationships and compositional rhythm rather than literal representation. Inspired by both natural environments and emotional states, the paintings exist in the space between recognition and pure abstraction.",
       },
     ],
   },
