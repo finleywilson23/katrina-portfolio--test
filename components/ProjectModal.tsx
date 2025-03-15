@@ -67,7 +67,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         </div>
 
         <div className="p-6">
-          <div className="relative w-full h-[300px] mb-6">
+          <div className="relative w-full h-full mb-6">
             {!imageLoaded && <Skeleton className="w-full h-full rounded-md absolute top-0 left-0" />}
             <img
               src={project.images[currentImageIndex] || "/placeholder.svg"}
