@@ -20,7 +20,21 @@ import {userEffect, useState, useRef} from "react;
     <div 
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      class
+      className="w-64 h-40 border-2 border-gray-300 rounded-lg overflow-hidden"
+    >
+      <video
+        ref={videoRef}
+        className="w-full h-full object-cover"
+        src="/path-to-your-video.mp4"
+        muted
+        loop
+      />
+    </div>
+  );
+};
+
+export default HoverVideo;
+
   
   
 
