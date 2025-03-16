@@ -2,7 +2,7 @@
 
 
 
-import {userEffect, useState, useRef} from "react;
+import {userEffect, useState, useRef} from "react
   const HoverVideo = () => {
     const [isHovered, setIsHovered] = useState(false);
     const videoRef = useref<HtMLVideoelement>(null);
