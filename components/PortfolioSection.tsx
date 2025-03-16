@@ -149,7 +149,7 @@ const portfolioData: PortfolioSectionData[] = [
         description: "Personal Project",
         year: "2024",
         images: [
-          "3d-abstract.webp
+          "3d-abstract.webp",
         ],
         link: "https://youtu.be/V4nLXzO-t6M",
         additionalInfo:
