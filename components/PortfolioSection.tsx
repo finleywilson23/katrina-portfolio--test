@@ -149,11 +149,9 @@ const portfolioData: PortfolioSectionData[] = [
         description: "Personal Project",
         year: "2024",
         images: [
-          "/placeholder.svg",
-          "/placeholder.svg",
-          "/placeholder.svg",
+          "3d-abstract.webp
         ],
-        link: "https://example.com/arch-viz",
+        link: "https://youtu.be/V4nLXzO-t6M",
         additionalInfo:
           "This experimental project explores the relationship between abstract geometric forms and light in a 3D space. Using Blender, I created a series of compositions that play with perception, shadow, and reflection to create visually striking environments.",
       },
@@ -162,7 +160,8 @@ const portfolioData: PortfolioSectionData[] = [
         name: "Dancing Human Figure Animation",
         description: "Personal Project",
         year: "2023",
-        images: ["/placeholder.svg"],
+        images: ["human-dancing.webp"],
+        link: "https://youtu.be/fKa2_LguhMQ",
         additionalInfo:
           "This animation project focused on capturing the fluid movement of dance through 3D character animation. I explored motion capture techniques combined with manual keyframing to achieve natural, expressive movement that conveys emotion through body language.",
       },
@@ -171,7 +170,7 @@ const portfolioData: PortfolioSectionData[] = [
         name: "3D Still Life",
         description: "Personal Project",
         year: "2023",
-        images: ["/placeholder.svg", "/placeholder.svg"],
+        images: ["/placeholder.svg"],
         additionalInfo:
           "Inspired by traditional still life painting, this 3D rendering project explores composition, texture, and lighting in a digital space. I created highly detailed models with realistic materials and lighting to achieve a photorealistic quality with subtle artistic interpretation.",
       },
@@ -180,7 +179,7 @@ const portfolioData: PortfolioSectionData[] = [
         name: "Pushed Idea – Video Combined with 3D Animation",
         description: "Personal Project",
         year: "2024",
-        images: ["/placeholder.svg", "/placeholder.svg"],
+        images: ["pushed-idea.webp"],
         additionalInfo:
           "This experimental project combines live video footage with 3D animation elements to create a mixed-reality narrative. Using camera tracking and compositing techniques, I integrated abstract 3D elements that interact with the physical environment in unexpected ways.",
       },
@@ -206,8 +205,8 @@ const portfolioData: PortfolioSectionData[] = [
         name: "The Lonely Princess World",
         description: "Personal Project",
         year: "2024",
-        images: ["/placeholder.svg"],
-        link: "https://example.com/vr-gallery",
+        images: ["princess-world.webp"],
+        link: "https://youtu.be/ziaHUAMBmwE",
         additionalInfo:
           "This VR experience tells the story of a lonely princess through an interactive fairy tale environment. Users can explore a surreal castle and its surroundings, discovering narrative elements through interaction with objects and environments. The project was built in Unity with custom 3D assets and atmospheric sound design.",
       },
@@ -277,7 +276,8 @@ const portfolioData: PortfolioSectionData[] = [
         name: "Safe driving",
         description: "Personal Project",
         year: "2024",
-        images: ["/placeholder.svg"],
+        images: ["safe-driving.webp"],
+        link: "https://youtu.be/1e6VV_aBI0c",
         additionalInfo:
           "This experimental short film explores the psychological experience of driving through abstract visuals and immersive sound design. Using a combination of in-camera techniques and subtle post-production effects, the piece creates a hypnotic rhythm that mimics the meditative state often experienced during long drives.",
       },
@@ -286,8 +286,8 @@ const portfolioData: PortfolioSectionData[] = [
         name: "Baltic sea",
         description: "Personal Project",
         year: "2023",
-        images: ["/placeholder.svg"],
-        link: "https://example.com/music-video",
+        images: ["baltic-sea.webp"],
+        link: "https://youtu.be/KY9xUp_2fhU",
         additionalInfo:
           "This audio-visual piece captures the changing moods and textures of the Baltic Sea through different seasons and weather conditions. The project combines time-lapse photography, underwater footage, and field recordings to create an immersive portrait of this distinctive body of water and its relationship to the surrounding landscape.",
       },
