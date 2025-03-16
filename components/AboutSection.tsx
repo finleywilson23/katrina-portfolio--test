@@ -11,7 +11,7 @@ export default function AboutSection() {
           </h2>
           <div className="md:w-1/2">
             <Image
-              src="/placeholder.svg"
+              src="/katrina.webp"
               alt="About Me"
               width={400}
               height={600}
